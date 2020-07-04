@@ -5,24 +5,39 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Portfolio Home</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/home.css'>
+    <!-- <script src='main.js'></script> -->
 </head>
 <body>
-    <nav>
-        <a href="#">Home</a> |
-        <a href="#">Experience</a> |
-        <a href="#">Skills</a> |
-        <a href="#">About</a>
-        <h3>ANV</h3>
+    
+    <nav>   
+        <div id="nav-container">
+
+            <div id="nav-links">
+                <a href="#">Home</a> 
+                <a href="#">Experience</a> 
+                <a href="#">Skills</a> 
+                <a href="#">About</a>
+            </div>
+            
+            <h3>ANV</h3>
+        </div>       
+        
     </nav>
 
-    <h1>Hi I'm Aswin</h1>
-    <h2>And this is my portfolio</h2>
+    <div id = "intro-container">
+        <h1>Hi I'm Aswin.</h1>
+        <h2>And this is my portfolio</h2>
+    </div>   
 
-    <h4>My Projects</h4> 
-    <a href="#">See more</a>
+    
     <div id = "projects-container">
+        <div id = "projects-heading-container">
+            <h4>My Projects</h4> 
+            <a href="#">See more</a>        
+        </div>
+        
         <div id = "carousel-container">
             <div class = "project-card">
                 Project 1
