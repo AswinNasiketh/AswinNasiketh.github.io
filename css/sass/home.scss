@@ -16,23 +16,36 @@ nav{
         margin: 0 auto;
         padding: 3em 0;
         #nav-links{
-            display: inline;
+            display: inline;           
+        
             a{
-                
+            
                 font-style: normal;
                 font-weight: 300;
                 font-size: 16px;
                 line-height: 19px;
     
                 text-align: center;
-                margin: 0 6em ;
+                margin: 0 5vw ;
                 color: rgba($color: #fff, $alpha: 0.87);
                 text-decoration: none;
+
+                img{
+                    display: none;
+                }
             }
+
+            
 
             a:hover{
                 color: rgba($color:$secondary-colour, $alpha: 0.87);
             }
+
+            a:visited{
+                color: rgba($color: #fff, $alpha: 0.87);
+            }
+            
+            
         }
         
 
@@ -44,7 +57,7 @@ nav{
             display: inline;
             text-align: center;
             color: rgba($color: #fff, $alpha: 0.87);
-            margin-left: 4em;
+            margin-left: 8vw;
         }
     }
     
@@ -53,6 +66,7 @@ nav{
 #intro-container{
     margin: 0 auto;
     width: fit-content;
+    padding: 0 2vw;
     color: rgba($color: #fff, $alpha: 0.87);
 
     h1{
@@ -75,8 +89,7 @@ nav{
 }
 
 #projects-container{
-    margin-top: 6em;
-    margin-left: 15%;
+    margin: 6em 10%;
     
 
     #projects-heading-container{
@@ -86,8 +99,7 @@ nav{
             font-size: 22px;
             line-height: 23px;
             color: rgba($color: #fff, $alpha: 0.87);
-            display: inline;
-            
+            display: inline;            
         }
         a{
             display: inline;
@@ -110,7 +122,6 @@ nav{
     #carousel-container{
         white-space: nowrap;
         overflow: auto;
-        width: 80%;
     }
 
     #carousel-container::-webkit-scrollbar{
@@ -129,8 +140,8 @@ nav{
     } 
     
     .project-card{
-        width: 350px;
-        height: 350px;
+        width: 20vw;  
+        height: 20vw;
         background:rgba(255, 255, 255, 0.16); ;
         border-radius: 30px;
         mix-blend-mode: normal;
@@ -139,3 +150,80 @@ nav{
     }
 }
 
+
+@media screen and (max-width: 900px){
+
+    #projects-container{
+        margin-top: 5em;
+        
+
+        #projects-heading-container{
+            margin-bottom: 1em;
+
+            a{
+                display: block;
+            }
+
+            h4{
+                display: block;
+                text-align: center;
+                margin-bottom: 0.5em;
+            }
+        }
+
+        .project-card{
+            display: block;
+            width: 60vw;
+            height: 60vw;
+            margin: 1.5em auto;
+        }
+    }
+    
+}
+
+//move navbar
+@media screen and (max-width: 550px){
+    nav{
+        position: fixed;
+        bottom: 0;
+
+        background:rgb(78, 78, 78);
+
+        width: 100vw;
+       
+
+        #nav-container{
+            padding: 1.5vh 0;
+            margin: 0 auto;
+
+            h3{
+                display:none;
+            }
+
+            #nav-links{             
+    
+                margin: 0 auto;
+                a{
+                    
+                    font-size: 0.8rem;
+                    line-height: 19px; 
+                    text-align: center;
+                    display: inline-table;
+                    margin: 0 6vw;
+
+                    img{
+                        display: block;
+                        width: 5vw;
+                        height: 5vw;
+                        margin: 0 auto;
+                        margin-bottom: 0.2em;
+                    }
+                    
+                }                 
+                
+            }
+        }
+        
+        
+    }
+}
