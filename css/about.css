@@ -1,0 +1,43 @@
+#intro-container {
+  width: 95vh;
+  margin: 3vh auto;
+  margin-bottom: 8vh;
+}
+
+#intro-container img {
+  height: 18vw;
+  width: 18vw;
+  border-radius: 10vw;
+  float: left;
+  margin-right: 4vh;
+}
+
+#intro-container #current-status-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#info-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 5vh;
+}
+
+#info-container .info-el {
+  flex: 20%;
+}
+
+#info-container .info-el .info-el-img {
+  width: 18vw;
+  height: 18vw;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 30px;
+  mix-blend-mode: normal;
+  margin: 0 auto;
+}
+
+#info-container .info-el p {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.87);
+}

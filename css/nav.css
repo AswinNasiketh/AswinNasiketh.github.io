@@ -1,0 +1,80 @@
+nav {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 83.33%), rgba(18, 18, 18, 0.04);
+}
+
+nav #nav-container {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 3em 0;
+}
+
+nav #nav-container #nav-links {
+  display: inline;
+}
+
+nav #nav-container #nav-links a {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 19px;
+  text-align: center;
+  margin: 0 5vw;
+  color: rgba(255, 255, 255, 0.87);
+  text-decoration: none;
+}
+
+nav #nav-container #nav-links a img {
+  display: none;
+}
+
+nav #nav-container #nav-links a:visited {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+nav #nav-container #nav-links a:hover {
+  color: rgba(0, 167, 225, 0.87);
+}
+
+nav #nav-container h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  display: inline;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.87);
+  margin-left: 8vw;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    position: fixed;
+    bottom: 0;
+    background: #4e4e4e;
+    width: 100vw;
+  }
+  nav #nav-container {
+    padding: 1.5vh 0;
+    margin: 0 auto;
+  }
+  nav #nav-container h3 {
+    display: none;
+  }
+  nav #nav-container #nav-links {
+    margin: 0 auto;
+  }
+  nav #nav-container #nav-links a {
+    font-size: 0.8rem;
+    line-height: 19px;
+    text-align: center;
+    display: inline-table;
+    margin: 0 6vw;
+  }
+  nav #nav-container #nav-links a img {
+    display: block;
+    width: 5vw;
+    height: 5vw;
+    margin: 0 auto;
+    margin-bottom: 0.2em;
+  }
+}

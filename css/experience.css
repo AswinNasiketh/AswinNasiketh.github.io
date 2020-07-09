@@ -1,0 +1,40 @@
+#projects-container {
+  margin: 10vw 0;
+}
+
+#projects-container .row {
+  margin: 0 20vw;
+}
+
+#projects-container .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#projects-container .column {
+  float: left;
+  width: 50%;
+}
+
+#projects-container .column .project-card {
+  width: 20vw;
+  height: 20vw;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 30px;
+  mix-blend-mode: normal;
+  margin: 5vh auto;
+}
+
+@media screen and (max-width: 900px) {
+  #projects-container {
+    margin-bottom: 12vh;
+  }
+  #projects-container .column {
+    width: 100%;
+  }
+  #projects-container .column .project-card {
+    width: 60vw;
+    height: 60vw;
+  }
+}

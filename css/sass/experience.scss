@@ -1,0 +1,46 @@
+#projects-container{
+
+    margin: 10vw 0;
+
+    .row{
+        margin: 0 20vw;
+    }
+
+    .row:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .column{
+        float: left; 
+        width: 50%;
+
+        .project-card{
+            width: 20vw;  
+            height: 20vw;
+            background:rgba(255, 255, 255, 0.16); ;
+            border-radius: 30px;
+            mix-blend-mode: normal;
+            
+            margin: 5vh auto;
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+    #projects-container{
+        margin-bottom: 12vh;
+        .column{
+            width: 100%;
+
+            .project-card{
+                width: 60vw;  
+                height: 60vw;
+            }
+        }
+    }
+}
+
+
+
