@@ -12,6 +12,10 @@
   margin-right: 4vh;
 }
 
+#intro-container #current-status-container {
+  color: rgba(255, 255, 255, 0.87);
+}
+
 #intro-container #current-status-container::after {
   content: "";
   display: table;

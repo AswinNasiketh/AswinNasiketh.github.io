@@ -1,3 +1,4 @@
+$text-colour: rgba($color: #fff, $alpha: 0.87);
 #intro-container{
     width: 95vh;
     margin: 3vh auto;
@@ -12,9 +13,9 @@
 
     margin-bottom: 8vh;
 
-    // #current-status-container{
-        
-    // }
+    #current-status-container{
+        color: $text-colour;;
+    }
 
     #current-status-container::after{
         content: "";
@@ -43,7 +44,7 @@
 
         p{
             text-align: center;
-            color: rgba($color: #fff, $alpha: 0.87);
+            color: $text-colour;
         }
     }
 }
