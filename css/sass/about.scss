@@ -1,20 +1,27 @@
+
+//TODO: MAKE RESPOSIVE
 $text-colour: rgba($color: #fff, $alpha: 0.87);
 #intro-container{
-    width: 95vh;
+    width: 60vw;
     margin: 3vh auto;
+    display: flex;
 
-    img{
-        height: 18vw;
-        width: 18vw;
+    #img-me{
+        flex: 35%;
+        width: 25vw;
+        height: 25vw;
         border-radius: 10vw;
-        float: left;
-        margin-right: 4vh;
+        margin: 0 auto;
     }
 
     margin-bottom: 8vh;
 
     #current-status-container{
-        color: $text-colour;;
+        p{
+            color: $text-colour;
+            text-align: center;
+        }
+        
     }
 
     #current-status-container::after{
@@ -48,3 +55,39 @@ $text-colour: rgba($color: #fff, $alpha: 0.87);
         }
     }
 }
+
+@media screen and (max-width: 900px){
+    #intro-container{
+        display: block;
+        width: 95vw;
+        
+
+        #img-me{
+            flex: none;
+
+            display: block;
+            // height: 40vw;
+            width: 40vw;
+            margin: 0 auto;
+        }
+
+        #current-status-container{
+            margin: 5vh 10vw;
+            width: 80vw;
+        }
+    }
+
+    #info-container{
+        display: block;
+
+        .info-el{
+            flex: none;
+
+            .info-el-img{
+                width: 65vw;  
+                height: 65vw;
+            }
+        }
+    }
+}
+
