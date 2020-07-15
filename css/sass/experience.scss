@@ -1,3 +1,6 @@
+$secondary-colour: #00A7E1;
+$primary-colour: rgba($color: #fff, $alpha: 0.87);
+
 #projects-container{
 
     margin: 10vw 0;
@@ -24,6 +27,58 @@
             mix-blend-mode: normal;
             
             margin: 5vh auto;
+
+            img{
+                max-width: 80%;
+                height: 80%;
+                margin: 10%;
+                vertical-align: middle;      
+            }
+    
+            h5{
+                display: none;
+                overflow: hidden;
+                width: 80%;
+                margin: 0 10%;
+                padding-top: 10%;
+    
+    
+                text-align: center;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 2vw;
+                line-height: 2.5vw;
+                color: $primary-colour;
+            }
+
+            p{
+                display: none;
+                overflow: hidden;
+                width: 80%;
+                margin: 5% 10%;    
+    
+                text-align: center;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 1.2vw;
+                line-height: 1.8vw;
+                color: $primary-colour;
+            }
+        }
+
+        .project-card:hover{
+            h5{
+                display: block;
+            }
+
+            p{
+                display: block;
+            }
+
+            img{
+                display: none;            
+            }
+    
         }
     }
 }
@@ -37,6 +92,16 @@
             .project-card{
                 width: 60vw;  
                 height: 60vw;
+
+                h5{
+                    font-size: 5vw;
+                    line-height: 6vw;
+                }
+
+                p{
+                    font-size: 3vw;
+                    line-height: 4vw;
+                }
             }
         }
     }

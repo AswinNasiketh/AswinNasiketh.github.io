@@ -82,6 +82,7 @@
   mix-blend-mode: normal;
   margin: 1vw;
   flex-shrink: 0;
+  text-align: center;
 }
 
 #projects-container .project-card img {

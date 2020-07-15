@@ -1,5 +1,6 @@
 $secondary-colour: #00A7E1;
 $primary-colour: rgba($color: #fff, $alpha: 0.87);
+
 #intro-container{
     margin: 0 auto;
     width: fit-content;
@@ -87,6 +88,8 @@ $primary-colour: rgba($color: #fff, $alpha: 0.87);
         margin: 1vw;
         flex-shrink: 0;
 
+        text-align: center;
+
         img{
             max-width: 80%;
             height: 80%;
@@ -106,18 +109,18 @@ $primary-colour: rgba($color: #fff, $alpha: 0.87);
             font-size: 18px;
             line-height: 23px;
             color: $primary-colour;
-        }
-
-    
+        }    
     }
 
     .project-card:hover{
         h5{
             display: block;
         }
+
         img{
             display: none;            
         }
+
 
     }
 
