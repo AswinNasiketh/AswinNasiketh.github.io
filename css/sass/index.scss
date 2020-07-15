@@ -1,0 +1,174 @@
+$secondary-colour: #00A7E1;
+$primary-colour: rgba($color: #fff, $alpha: 0.87);
+
+#intro-container{
+    margin: 0 auto;
+    width: fit-content;
+    padding: 0 2vw;
+    color: $primary-colour;
+
+    h1{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 75px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    h2{
+        margin-top: 0.5em;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 28px;
+        text-align: center;
+    }
+}
+
+#projects-container{
+    margin: 6em 10%;
+    // position: relative;
+
+    #projects-heading-container{
+        h4{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            line-height: 23px;
+            color: $primary-colour;
+            display: inline;            
+        }
+        a{
+            display: inline;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+
+            text-align: center;
+            margin: 0 1em ;
+            color: rgba($color: $secondary-colour, $alpha: 0.87);
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: $primary-colour
+        }
+    }  
+
+    #carousel-container{
+        overflow-x: auto;
+        overflow-y: hidden;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    #carousel-container::-webkit-scrollbar{
+        width: auto;
+        height: 10px;
+    } 
+
+    #carousel-container::-webkit-scrollbar-track{
+        background:#1b1b1b;  
+        border-radius: 30px;
+    } 
+
+    #carousel-container::-webkit-scrollbar-thumb{
+        background-color: rgba(255, 255, 255, 0.096);;
+        border-radius: 20px;        
+    } 
+    
+    .project-card{
+        width: 20vw;  
+        height: 20vw;
+        background:rgba(255, 255, 255, 0.16); ;
+        border-radius: 30px;
+        mix-blend-mode: normal;
+        margin: 1vw;
+        flex-shrink: 0;
+
+        text-align: center;
+
+        img{
+            max-width: 80%;
+            height: 80%;
+            margin: 10%;            
+        }
+
+        h5{
+            display: none;
+            overflow: hidden;
+            width: 80%;
+            margin: 40% 10%;
+
+
+            text-align: center;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 23px;
+            color: $primary-colour;
+        }    
+    }
+
+    .project-card:hover{
+        h5{
+            display: block;
+        }
+
+        img{
+            display: none;            
+        }
+
+
+    }
+
+    
+}
+
+
+@media screen and (max-width: 900px){
+
+    #projects-container{
+        margin-top: 5em;
+
+        #carousel-container{                  
+            display: block;     
+        }
+        
+
+        #projects-heading-container{
+            margin-bottom: 1em;
+
+            a{
+                display: block;
+            }
+
+            h4{
+                display: block;
+                text-align: center;
+                margin-bottom: 0.5em;
+            }
+        }
+
+        .project-card{
+            // display: block;
+            width: 60vw;
+            height: 60vw;
+            margin: 1.5em auto;
+
+            img{
+                width: 50vw;
+                height: 50vw;
+                margin: 5vw 5vw;
+            }
+
+            h5{
+                margin: auto 10%;
+                padding-top: 40%;
+            }
+        }
+    }
+    
+}

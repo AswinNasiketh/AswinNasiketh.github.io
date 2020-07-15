@@ -5,50 +5,80 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Portfolio Home</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/nav.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/index.css'>
+    <!-- <script src='main.js'></script> -->
 </head>
 <body>
-    <nav>
-        <a href="#">Home</a> |
-        <a href="#">Experience</a> |
-        <a href="#">Skills</a> |
-        <a href="#">About</a>
-        <h3>ANV</h3>
+    
+    <nav>   
+        <div id="nav-container">           
+
+            <div id="nav-links">
+                <a href="index.html"><img src="img/home-icon.svg">Home</a> 
+                <a href="experience.html"><img src="img/experience-icon.svg">Experience</a> 
+                <a href="skills.html"><img src="img/skills-icon.svg">Skills</a> 
+                <a href="about.html"><img src="img/user-icon.svg">About</a>
+            </div>
+            
+            <h3>ANV</h3>
+        </div>       
+        
     </nav>
 
-    <h1>Hi I'm Aswin</h1>
-    <h2>And this is my portfolio</h2>
+    <div id = "intro-container">
+        <h1>Hi I'm Aswin,</h1>
+        <h2>And this is my portfolio.</h2>
+    </div>   
 
-    <h4>My Projects</h4> 
-    <a href="#">See more</a>
+    
     <div id = "projects-container">
+        <div id = "projects-heading-container">
+            <h4>My Projects</h4> 
+            <a href="experience.html">See more</a>        
+        </div>
+        
         <div id = "carousel-container">
             <div class = "project-card">
-                Project 1
+                <img src="img/wind-turbine-bladebug.png" alt="Wind Turbine Localisation">
+                <h5>
+                    BladeBug Wind Turbine Localisation
+                </h5>
             </div>
 
             <div class = "project-card">
-                Project 2
+                <img src="img/dsd.png" alt="Wind Turbine Localisation">
+                <h5>
+                    Digital System Design - Hardware Function Acceleration
+                </h5>
             </div>
 
             <div class = "project-card">
-                Project 3
+                <img src="img/veriTINY-logo.png" alt="Wind Turbine Localisation">
+                <h5>
+                    VeriTINY - Verilog Simulator written in F#
+                </h5>
             </div>
 
             <div class = "project-card">
-                Project 4
+                <img src="img/controlband.jpg" alt="Wind Turbine Localisation">
+                <h5>
+                    ControlBand - Gesture IOT Device Control Wristband
+                </h5>
             </div>
 
             <div class = "project-card">
-                Project 5
-            </div>
-
-            <div class = "project-card">
-                Project 6
+                <img src="img/WattownBoard.jpg" alt="Wind Turbine Localisation">
+                <h5>
+                    UROP - Integrating an Energy Demonstrator into a Digital Substation
+                </h5>
             </div>
 
         </div>
     </div>
+
+    
 </body>
 </html>

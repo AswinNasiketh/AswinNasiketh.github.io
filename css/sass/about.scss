@@ -1,0 +1,93 @@
+
+//TODO: MAKE RESPOSIVE
+$text-colour: rgba($color: #fff, $alpha: 0.87);
+#intro-container{
+    width: 60vw;
+    margin: 3vh auto;
+    display: flex;
+
+    #img-me{
+        flex: 35%;
+        width: 25vw;
+        height: 25vw;
+        border-radius: 10vw;
+        margin: 0 auto;
+    }
+
+    margin-bottom: 8vh;
+
+    #current-status-container{
+        p{
+            color: $text-colour;
+            text-align: center;
+        }
+        
+    }
+
+    #current-status-container::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+#info-container{
+    display: flex;
+    justify-content: center;
+    margin: 0 5vh;
+
+
+    .info-el{
+        flex: 20%;
+       
+        .info-el-img{
+            width: 18vw;  
+            height: 18vw;
+            background:rgba(255, 255, 255, 0.16); ;
+            border-radius: 30px;
+            mix-blend-mode: normal;
+            margin: 0 auto;        
+        }
+
+        p{
+            text-align: center;
+            color: $text-colour;
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+    #intro-container{
+        display: block;
+        width: 95vw;
+        
+
+        #img-me{
+            flex: none;
+
+            display: block;
+            // height: 40vw;
+            width: 40vw;
+            margin: 0 auto;
+        }
+
+        #current-status-container{
+            margin: 5vh 10vw;
+            width: 80vw;
+        }
+    }
+
+    #info-container{
+        display: block;
+
+        .info-el{
+            flex: none;
+
+            .info-el-img{
+                width: 65vw;  
+                height: 65vw;
+            }
+        }
+    }
+}
+

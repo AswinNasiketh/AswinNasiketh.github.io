@@ -1,0 +1,39 @@
+#skills-container{
+
+    margin: 0 auto;
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+    width: fit-content;
+
+    .skill-row{
+        margin: 4em auto;
+        width: fit-content;
+    }
+
+    .skill-card{
+        width: 20vw;  
+        height: 20vw;
+        background:rgba(255, 255, 255, 0.16); ;
+        border-radius: 30px;
+        mix-blend-mode: normal;
+        display: inline-block;
+        margin: 0 2vw;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+
+    #skills-container{
+        margin-top: 5em;      
+
+        .skill-card{
+            display: block;
+            width: 60vw;
+            height: 60vw;
+            margin: 1.5em auto;
+        }
+    }
+    
+}
+

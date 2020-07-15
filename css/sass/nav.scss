@@ -1,0 +1,102 @@
+$secondary-colour: #00A7E1;
+
+nav{
+
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 83.33%), rgba(18, 18, 18, 0.04);
+
+    #nav-container{
+        // margin: auto;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 3em 0;
+        #nav-links{
+            display: inline;           
+        
+            a{
+            
+                font-style: normal;
+                font-weight: 300;
+                font-size: 1.2rem;
+                line-height: 19px;
+    
+                text-align: center;
+                margin: 0 5vw ;
+                color: rgba($color: #fff, $alpha: 0.87);
+                text-decoration: none;
+
+                img{
+                    display: none;
+                }
+            }
+
+            a:visited{
+                color: rgba($color: #fff, $alpha: 0.87);
+            }
+
+            a:hover{
+                color: rgba($color:$secondary-colour, $alpha: 0.87);
+            }
+            
+            
+        }
+        
+
+        h3{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            line-height: 26px;
+            display: inline;
+            text-align: center;
+            color: rgba($color: #fff, $alpha: 0.87);
+            margin-left: 8vw;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    nav{
+        position: fixed;
+        bottom: 0;
+
+        background:rgb(78, 78, 78);
+
+        width: 100vw;
+       
+
+        #nav-container{
+            padding: 1.5vh 0;
+            margin: 0 auto;
+
+            h3{
+                display:none;
+            }
+
+            #nav-links{             
+    
+                margin: 0 auto;
+                a{
+                    
+                    font-size: 0.8rem;
+                    line-height: 19px; 
+                    text-align: center;
+                    display: inline-table;
+                    margin: 0 6vw;
+
+                    img{
+                        display: block;
+                        width: 5vw;
+                        height: 5vw;
+                        margin: 0 auto;
+                        margin-bottom: 0.2em;
+                    }
+                    
+                }                 
+                
+            }
+        }
+        
+        
+    }
+}
