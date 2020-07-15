@@ -6,28 +6,130 @@
 }
 
 #skills-container .skill-row {
-  margin: 4em auto;
+  margin: 0 auto;
+  margin-bottom: 5vh;
   width: fit-content;
+  display: flex;
 }
 
-#skills-container .skill-card {
+#skills-container .skill-card-row-1 {
   width: 20vw;
   height: 20vw;
+  flex: 33%;
   background: rgba(255, 255, 255, 0.16);
   border-radius: 30px;
-  mix-blend-mode: normal;
-  display: inline-block;
   margin: 0 2vw;
 }
 
-@media screen and (max-width: 600px) {
+#skills-container .skill-card-row-1 img {
+  max-width: 80%;
+  height: 80%;
+  margin: 10%;
+  vertical-align: middle;
+}
+
+#skills-container .skill-card-row-1 h5 {
+  display: none;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 10%;
+  padding-top: 10%;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2vw;
+  line-height: 2.5vw;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+#skills-container .skill-card-row-1 p {
+  display: none;
+  overflow: hidden;
+  width: 80%;
+  margin: 5% 10%;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2vw;
+  line-height: 1.8vw;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+#skills-container .skill-card-row-2 {
+  width: 20vw;
+  height: 20vw;
+  flex: 50%;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 30px;
+  margin: 0 2vw;
+}
+
+#skills-container .skill-card-row-2 img {
+  max-width: 80%;
+  height: 80%;
+  margin: 10%;
+  vertical-align: middle;
+}
+
+#skills-container .skill-card-row-2 h5 {
+  display: none;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 10%;
+  padding-top: 10%;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2vw;
+  line-height: 2.5vw;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+#skills-container .skill-card-row-2 p {
+  display: none;
+  overflow: hidden;
+  width: 80%;
+  margin: 5% 10%;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2vw;
+  line-height: 1.8vw;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+#skills-container .skill-card-row-1:hover h5, #skills-container .skill-card-row-2:hover h5 {
+  display: block;
+}
+
+#skills-container .skill-card-row-1:hover p, #skills-container .skill-card-row-2:hover p {
+  display: block;
+}
+
+#skills-container .skill-card-row-1:hover img, #skills-container .skill-card-row-2:hover img {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
   #skills-container {
     margin-top: 5em;
   }
-  #skills-container .skill-card {
+  #skills-container .skill-row {
+    display: block;
+    margin-bottom: 0;
+  }
+  #skills-container .skill-card-row-1, #skills-container .skill-card-row-2 {
     display: block;
     width: 60vw;
     height: 60vw;
     margin: 1.5em auto;
+  }
+  #skills-container .skill-card-row-1 h5, #skills-container .skill-card-row-2 h5 {
+    font-size: 5vw;
+    line-height: 6vw;
+  }
+  #skills-container .skill-card-row-1 p, #skills-container .skill-card-row-2 p {
+    font-size: 3vw;
+    line-height: 4vw;
   }
 }

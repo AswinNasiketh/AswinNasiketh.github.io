@@ -1,3 +1,6 @@
+$secondary-colour: #00A7E1;
+$primary-colour: rgba($color: #fff, $alpha: 0.87);
+
 #skills-container{
 
     margin: 0 auto;
@@ -6,32 +9,146 @@
     width: fit-content;
 
     .skill-row{
-        margin: 4em auto;
+        margin: 0 auto;
+        margin-bottom: 5vh;
         width: fit-content;
+        display: flex;
     }
 
-    .skill-card{
+    .skill-card-row-1{
         width: 20vw;  
         height: 20vw;
+        flex: 33%;
         background:rgba(255, 255, 255, 0.16); ;
         border-radius: 30px;
-        mix-blend-mode: normal;
-        display: inline-block;
         margin: 0 2vw;
+
+        img{
+            max-width: 80%;
+            height: 80%;
+            margin: 10%;
+            vertical-align: middle;      
+        }
+
+        h5{
+            display: none;
+            overflow: hidden;
+            width: 80%;
+            margin: 0 10%;
+            padding-top: 10%;
+
+
+            text-align: center;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 2vw;
+            line-height: 2.5vw;
+            color: $primary-colour;
+        }
+
+        p{
+            display: none;
+            overflow: hidden;
+            width: 80%;
+            margin: 5% 10%;    
+
+            text-align: center;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.2vw;
+            line-height: 1.8vw;
+            color: $primary-colour;
+        }
+    }
+
+    .skill-card-row-2{
+        width: 20vw;  
+        height: 20vw;
+        flex: 50%;
+        background:rgba(255, 255, 255, 0.16); ;
+        border-radius: 30px;
+        margin: 0 2vw;
+
+        img{
+            max-width: 80%;
+            height: 80%;
+            margin: 10%;
+            vertical-align: middle;      
+        }
+
+        h5{
+            display: none;
+            overflow: hidden;
+            width: 80%;
+            margin: 0 10%;
+            padding-top: 10%;
+
+
+            text-align: center;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 2vw;
+            line-height: 2.5vw;
+            color: $primary-colour;
+        }
+
+        p{
+            display: none;
+            overflow: hidden;
+            width: 80%;
+            margin: 5% 10%;    
+
+            text-align: center;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.2vw;
+            line-height: 1.8vw;
+            color: $primary-colour;
+        }
+    }
+
+    .skill-card-row-1:hover, .skill-card-row-2:hover{
+        h5{
+            display: block;
+        }
+
+        p{
+            display: block;
+        }
+
+        img{
+            display: none;            
+        }
+        
     }
 
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 900px){
 
     #skills-container{
         margin-top: 5em;      
 
-        .skill-card{
+        .skill-row{
+            display: block;
+            margin-bottom: 0;;
+        }
+
+        .skill-card-row-1, .skill-card-row-2{
             display: block;
             width: 60vw;
             height: 60vw;
             margin: 1.5em auto;
+
+            h5{
+                font-size: 5vw;
+                line-height: 6vw;
+            }
+
+            p{
+                font-size: 3vw;
+                line-height: 4vw;
+            }
         }
     }
     
