@@ -3,31 +3,32 @@
 $text-colour: rgba($color: #fff, $alpha: 0.87);
 #intro-container{
     width: 60vw;
-    margin: 3vh auto;
+    margin: 0 auto;
+    // margin-top: 2vh;
+    margin-bottom: 5vh;
     display: flex;
 
     #img-me{
         flex: 35%;
-        width: 25vw;
-        height: 25vw;
+        width: 20vw;
+
         border-radius: 10vw;
-        margin: 0 auto;
     }
-
-    margin-bottom: 8vh;
-
+    
     #current-status-container{
-        p{
-            color: $text-colour;
-            text-align: center;
-        }
-        
-    }
+        margin-left: 3vw;
 
-    #current-status-container::after{
-        content: "";
-        display: table;
-        clear: both;
+        h5{
+            text-align: center;
+            vertical-align: middle;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 2vw;
+            line-height: 2.5vw;
+            color: $text-colour;
+
+            
+        }        
     }
 }
 
@@ -35,23 +36,62 @@ $text-colour: rgba($color: #fff, $alpha: 0.87);
     display: flex;
     justify-content: center;
     margin: 0 5vh;
+    margin-bottom: 10vh;
 
 
     .info-el{
-        flex: 20%;
+        flex: 30%;
+        width: 20vw;  
+        height: 20vw;
+        background:rgba(255, 255, 255, 0.16); ;
+        border-radius: 30px;
+        margin: 0 5vw;
+        
+        .info-el-contents{
+            h5{
+                display: none;
+
+                width: 17.5vw;
+                height: 17.5vw;
+                margin: 0 auto; 
+
+                padding: 5% 0;
+
+                text-align: center;
+                vertical-align: middle;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 1.5vw;
+                line-height: 2vw;
+                color: $text-colour;
+            }
+        }
        
         .info-el-img{
-            width: 18vw;  
-            height: 18vw;
-            background:rgba(255, 255, 255, 0.16); ;
-            border-radius: 30px;
-            mix-blend-mode: normal;
-            margin: 0 auto;        
+            width: 12.5vw;
+            height: 12.5vw;
+            margin: 3.75vw;       
         }
 
         p{
             text-align: center;
             color: $text-colour;
+        }
+    }
+
+    .info-el:hover{
+        .info-el-img{
+            display: none;
+        }
+
+        .info-el-contents{
+            h5{
+                display: block;
+            }
+        }
+
+        p{
+            display: none;
         }
     }
 }
@@ -66,26 +106,40 @@ $text-colour: rgba($color: #fff, $alpha: 0.87);
             flex: none;
 
             display: block;
-            // height: 40vw;
             width: 40vw;
             margin: 0 auto;
         }
 
         #current-status-container{
-            margin: 5vh 10vw;
+            margin: 5vh auto;
             width: 80vw;
         }
     }
 
     #info-container{
         display: block;
+        
 
         .info-el{
             flex: none;
+            width: 65vw;  
+            height: 65vw;
+
+            margin: 5vh auto;
 
             .info-el-img{
-                width: 65vw;  
-                height: 65vw;
+                width: 57.5vw;  
+                height: 57.5vw;
+            }
+
+            .info-el-contents{
+                h5{                  
+                    width: 57.5vw;  
+                    height: 57.5vw;
+
+                    font-size: 5vw;
+                    line-height: 5.5vw;
+                }
             }
         }
     }
