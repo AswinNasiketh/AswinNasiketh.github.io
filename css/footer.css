@@ -28,6 +28,9 @@ footer #attributions-container {
 }
 
 @media screen and (max-width: 900px) {
+  footer {
+    margin-bottom: 15vh;
+  }
   footer p {
     font-size: 2vw;
     line-height: 2.5vw;

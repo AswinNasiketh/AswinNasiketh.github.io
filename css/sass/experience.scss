@@ -22,7 +22,7 @@ $primary-colour: rgba($color: #fff, $alpha: 0.87);
         .project-card{
             width: 20vw;  
             height: 20vw;
-            background:rgba(255, 255, 255, 0.16); ;
+            background:rgba(255, 255, 255, 0.12); ;
             border-radius: 30px;
             mix-blend-mode: normal;
             
@@ -85,7 +85,7 @@ $primary-colour: rgba($color: #fff, $alpha: 0.87);
 
 @media screen and (max-width: 900px){
     #projects-container{
-        margin-bottom: 12vh;
+        // margin-bottom: 4vh;
         .column{
             width: 100%;
 
