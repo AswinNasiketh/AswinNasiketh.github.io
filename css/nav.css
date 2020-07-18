@@ -50,6 +50,7 @@ nav #nav-container h3 {
   nav {
     position: fixed;
     bottom: 0;
+    z-index: 1;
     background: #4e4e4e;
     width: 100vw;
   }

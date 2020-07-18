@@ -6,9 +6,12 @@
     <title>Portfolio Home</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/nav.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/index.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/footer.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/fade-in.css'>
     <!-- <script src='main.js'></script> -->
 </head>
 <body>
@@ -29,12 +32,12 @@
     </nav>
 
     <div id = "intro-container">
-        <h1>Hi I'm Aswin,</h1>
-        <h2>And this is my portfolio.</h2>
+        <h1 class="fade-in-0-5s">Hi I'm Aswin,</h1>
+        <h2 class="fade-in-0-5s-d1s">And this is my portfolio.</h2>
     </div>   
 
     
-    <div id = "projects-container">
+    <div id = "projects-container" class="fade-in-0-5s-d1s">
         <div id = "projects-heading-container">
             <h4>My Projects</h4> 
             <a href="experience.html">See more</a>        
@@ -78,7 +81,17 @@
 
         </div>
     </div>
-
     
+    <footer>
+        <div id="contact-container">
+            <p>Get in touch:</p>
+            <a href="https://www.linkedin.com/in/aswin-vivekanandan-0116a9172/" target="_blank"><i class="fa fa-linkedin-square" style="font-size:36px;color:white; margin: 0 0.5vw;"></i></a>
+            <a href="mailto: aswinvivekanandan@gmail.com"><i class="fa fa-envelope" style="font-size:36px;color:white; margin: 0 0.5vw;"></i></a>
+            <a href="https://github.com/AswinNasiketh" target="_blank"><i class="fa fa-github" style="font-size:36px;color:white; margin: 0 0.5vw;"></i></a>
+        </div>
+        <div id="attributions-container">
+            Mobile Navbar Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </div>
+    </footer>
 </body>
 </html>
