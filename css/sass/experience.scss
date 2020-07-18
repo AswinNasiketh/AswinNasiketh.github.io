@@ -67,6 +67,7 @@ $primary-colour: rgba($color: #fff, $alpha: 0.87);
         }
 
         .project-card:hover{
+            cursor: pointer;
             h5{
                 display: block;
             }

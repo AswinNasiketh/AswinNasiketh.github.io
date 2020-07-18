@@ -60,6 +60,10 @@
   color: rgba(255, 255, 255, 0.87);
 }
 
+#projects-container .column .project-card:hover {
+  cursor: pointer;
+}
+
 #projects-container .column .project-card:hover h5 {
   display: block;
 }
