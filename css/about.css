@@ -94,6 +94,10 @@
     margin: 5vh auto;
     width: 80vw;
   }
+  #intro-container #current-status-container h5 {
+    font-size: 5vw;
+    line-height: 6.0vw;
+  }
   #info-container {
     display: block;
   }
@@ -110,7 +114,7 @@
   #info-container .info-el .info-el-contents h5 {
     width: 57.5vw;
     height: 57.5vw;
-    font-size: 5vw;
-    line-height: 5.5vw;
+    font-size: 4vw;
+    line-height: 5vw;
   }
 }

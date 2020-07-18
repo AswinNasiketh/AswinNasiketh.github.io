@@ -1,0 +1,41 @@
+footer {
+  margin: 5vh 0;
+}
+
+footer p {
+  display: inline;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5vw;
+  line-height: 2vw;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+footer #contact-container {
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 1vh;
+}
+
+footer #attributions-container {
+  width: fit-content;
+  margin: 0.5vh auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1vw;
+  line-height: 1.5vw;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+@media screen and (max-width: 900px) {
+  footer p {
+    font-size: 2vw;
+    line-height: 2.5vw;
+    display: block;
+    text-align: center;
+  }
+  footer #attributions-container {
+    font-size: 1.5vw;
+    line-height: 2vw;
+  }
+}
