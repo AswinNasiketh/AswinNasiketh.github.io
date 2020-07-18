@@ -9,6 +9,10 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/experience.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' type='text/css' media='screen' href='css/footer.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/fade-in.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/modal.css'>
+
+    
 </head>
 <body>
     <nav>   
@@ -27,9 +31,9 @@
     </nav>
 
    
-    <h1 id = "title">Experience</h1>
+    <h1 id = "title" class="fade-in-0-5s">Experience</h1>
 
-    <div id="projects-container">
+    <div id="projects-container" class="fade-in-0-5s-d1s">
         <div class="row">
             <div class="column">
                 <div class="project-card">
@@ -68,7 +72,7 @@
                     <img src="img/controlband.jpg" alt="ControlBand-image">
                     <h5>ControlBand</h5>
                     <p>
-                        Wristband which allows for gesture control of IOT devices via IFTT. 
+                        Wristband which allows for gesture control of IOT devices via IFTTT. 
                     </p>
                 </div>
             </div>
@@ -78,7 +82,7 @@
             <div class="column">
                 <div class="project-card">
                     <img src="img/WattownBoard.jpg" alt="Wattown Picture">
-                    <h5>Undergraduate Research Oppurtunity</h5>
+                    <h5>Wattown 2.0</h5>
                     <p>
                         Integrating Energy Demonstrator into Digital Substation
                     </p>
@@ -161,9 +165,24 @@
                 </div>
             </div> -->
         </div> 
-
-
     </div>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Modal Header</h2>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the Modal Body</p>
+          </div>
+        </div>
+      
+      </div>
+      <script src="script/prj-descs.js"></script>
+      <script src="script/modal.js"></script>
 
     <footer>
         <div id="contact-container">
